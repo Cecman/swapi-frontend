@@ -7,9 +7,10 @@ import { MovieComponent } from './panels/movie/movie-panel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
+import { PeopleComponent } from './panels/people/people.component';
 
 @NgModule({
-  declarations: [AppComponent, MovieComponent],
+  declarations: [AppComponent, MovieComponent, PeopleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
