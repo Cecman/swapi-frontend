@@ -1,2 +1,8 @@
-<app-movie-panel></app-movie-panel>
-<app-people></app-people>
+<button mat-raised-button color="primary" (click)="clickedMovies()">
+  Films
+</button>
+<button mat-raised-button color="accent" (click)="clickedPeople()">
+  People
+</button>
+<app-movie-panel *ngIf="isClickedMovies"></app-movie-panel>
+<app-people *ngIf="isClickedPeople"></app-people>

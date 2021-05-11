@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { HttpClientModule } from '@angular/common/http';
 import { PeopleComponent } from './panels/people/people.component';
-
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
   declarations: [AppComponent, MovieComponent, PeopleComponent],
   imports: [
@@ -16,7 +16,8 @@ import { PeopleComponent } from './panels/people/people.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatExpansionModule,
-    HttpClientModule
+    HttpClientModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
