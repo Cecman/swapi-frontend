@@ -1,0 +1,21 @@
+<mat-expansion-panel class="main-panel">
+  <mat-expansion-panel-header>
+    <mat-panel-title> Movies </mat-panel-title>
+    <mat-panel-description>
+      See the list of Star Wars movies
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-expansion-panel *ngFor="let movie of movies">
+    <mat-expansion-panel-header>
+      <mat-panel-title>{{movie.title}}</mat-panel-title>
+      <mat-panel-description>Episode: {{movie.episode_id}}</mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>Characters in {{movie.title}}</mat-panel-title>
+      </mat-expansion-panel-header>
+      <p *ngFor="let character of movie.characters">{{character}}</p>
+    </mat-expansion-panel>
+  </mat-expansion-panel>
+</mat-expansion-panel>
+
